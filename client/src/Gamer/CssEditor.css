@@ -1,0 +1,22 @@
+.open-css-editor-button {
+	font-size: 50px; /* גודל קטן לאמוג'י */
+	background-color: transparent; /* אין רקע */
+	border-radius: 50%; 
+	width: 4px; 
+	height: 4px; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+  }
+  
+  .open-css-editor-button:hover {
+	background-color:rgb(175, 197, 175);
+	cursor: pointer;
+
+  }
+  
+  .open-css-editor-button:focus {
+	outline: none; /* להסיר את הגבול סביב הכפתור בעת הבחירה */
+  }
+  

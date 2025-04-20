@@ -1,0 +1,52 @@
+.code-editor-container {
+	text-align: center;
+  }
+  
+  .open-editor-button {
+	background-color: #4caf50;
+	color: white;
+	padding: 10px 20px;
+	font-size: 16px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  .open-editor-button:hover {
+	background-color: #45a049;
+  }
+  
+  .modal-overlay-editor {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+  }
+  
+  .modal-content-editor {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	width: 80%;
+	max-width: 9000px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	position: relative;
+  }
+  
+  .close-button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	border: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+	cursor: pointer;
+  }
+
+  

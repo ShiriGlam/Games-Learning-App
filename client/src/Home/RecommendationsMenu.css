@@ -1,0 +1,93 @@
+.recommendations-menu {
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+  color: #e2e8f0;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 229, 255, 0.08), 0 0 10px rgba(0, 229, 255, 0.05) inset;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+.recommendations-menu:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 229, 255, 0.2);
+}
+
+.recommendations-menu h1,
+.recommendations-menu h3 {
+  color: #7dd3fc;
+  font-weight: 600;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.Archive-button {
+  width: 36px;
+  margin-right: 10px;
+}
+
+.recommendations-menu p {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  margin-bottom: 14px;
+}
+
+.recommendations-menu input {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  transition: border 0.3s ease-in-out;
+}
+
+.recommendations-menu input:focus {
+  border-color: #38bdf8;
+  outline: none;
+}
+
+
+
+.word-list {
+  margin-top: 24px;
+  background-color: rgba(30, 41, 59, 0.6);
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.05);
+}
+
+.word-item {
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  color: #e2e8f0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.word-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 229, 255, 0.1);
+}
+
+.word-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #e2e8f0;
+}
+
+.file-format-note {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}

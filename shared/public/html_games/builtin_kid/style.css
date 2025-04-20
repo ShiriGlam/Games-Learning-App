@@ -1,0 +1,102 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+	background-color: #87ceeb;
+	overflow: hidden;
+  }
+  
+  #game-container {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+  }
+  
+  #background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-image: url('assets/background.png'); /* ודא שהקובץ נמצא פה */
+	background-size: cover;     /* תמלא את כל המסך */
+	background-position: center;
+	background-repeat: no-repeat;
+	animation: scrollBackground 20s linear infinite;
+	z-index: 0;
+  }
+
+  @keyframes scrollBackground {
+	0% {
+	  transform: translateX(0);
+	}
+	100% {
+	  transform: translateX(-20vw); /* זז שמאלה חצי מהמסך */
+	}
+  }
+  #character {
+	position: absolute;
+	bottom: 80px;
+	left: 100px;
+	height: 120px;
+	z-index: 2;
+  }
+  
+  #word-display {
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: white;
+	padding: 10px 20px;
+	border-radius: 10px;
+	font-size: 20px;
+	z-index: 3;
+  }
+  
+  #signs-container {
+	position: absolute;
+	bottom: 120px;
+	left: 780px;
+	display: flex;
+	gap: 20px;
+	z-index: 2;
+  }
+  
+  .sign {
+	background-image: url('assets/sign.png'); 
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 200px;
+	height: 220px;
+	display: flex;
+	align-items: flex-end; 
+	justify-content: center;
+	font-weight: bold;
+	font-size: 16px;
+	text-align: center;
+	padding-bottom: 280px; 
+	cursor: pointer;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sign:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+#character {
+	position: absolute;
+	bottom: 10px;
+	left: 30px;
+	width: 100px;
+	height: auto;
+	animation: walkAnim 3s linear infinite;
+	animation-play-state: paused; 
+  }
+  
+  @keyframes walkAnim {
+	0% { left: 30px; }
+	100% { left: 80vw; }
+  }
+  

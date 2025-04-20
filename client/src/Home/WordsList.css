@@ -1,0 +1,54 @@
+.wordlist-cont {
+	margin: 30px auto;
+	padding: 30px;
+	width: 95%;
+	max-width: 1200px;
+	text-align: center;
+	background: rgba(42, 56, 77, 0.7);
+	border: 1px solid rgba(0, 229, 255, 0.1);
+	border-radius: 16px;
+	box-shadow: 0 4px 32px rgba(0, 229, 255, 0.1);
+	backdrop-filter: blur(10px);
+	color: #e2e8f0;
+	overflow-x: auto;
+  }
+  
+  .wordlist-table {
+	min-width: 100%;
+	max-width: 100%;
+  }
+  
+  .wordlist-table th,
+  .wordlist-table td {
+	padding: 14px;
+	border: 1px solid rgba(148, 163, 184, 0.3);
+	text-align: center;
+	font-size: 0.95rem;
+  }
+  
+  .wordlist-cont::-webkit-scrollbar {
+	height: 10px;
+  }
+  .wordlist-cont::-webkit-scrollbar-thumb {
+	background: #38bdf8;
+	border-radius: 6px;
+  }
+  .wordlist-cont::-webkit-scrollbar-track {
+	background: transparent;
+  }
+  
+  @media (max-width: 768px) {
+	.wordlist-cont {
+	  padding: 20px 10px;
+	}
+  
+	.wordlist-table {
+	  font-size: 0.85rem;
+	}
+  
+	.audio-button {
+	  font-size: 0.9rem;
+	  padding: 4px 8px;
+	}
+  }
+  

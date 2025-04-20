@@ -1,0 +1,97 @@
+.login-page {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #0f172a; /* רקע כהה יותר עם ניגודיות */
+  }
+  
+  .video-container-login {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .background-video-login {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: -2;
+  }
+  
+  .container-login {
+    text-align: center;
+    padding: 40px 30px;
+    border-radius: 16px;
+    backdrop-filter: blur(12px);
+    background: rgba(17, 24, 39, 0.7); /* כהה שקוף */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 24px rgba(0, 229, 255, 0.08);
+    max-width: 400px;
+    width: 90%;
+    color: #e0f2fe;
+    animation: fadeIn 0.7s ease-in-out;
+  }
+  
+  .container-login h3 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    color: #7dd3fc;
+  }
+  
+  .container-login:hover {
+    box-shadow: 0 12px 36px rgba(0, 229, 255, 0.15);
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .container-login .google-login-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button.google-login {
+    background: linear-gradient(to right, #3b82f6, #6366f1);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    cursor: pointer;
+  }
+  
+  button.google-login:hover {
+    transform: scale(1.06);
+    box-shadow: 0 6px 16px rgba(59, 130, 246, 0.5);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

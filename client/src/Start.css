@@ -1,0 +1,104 @@
+.start-page {
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #e0f2fe;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    padding: 10px;
+  }
+
+  .video-container {
+    position: fixed;
+    top: 0;
+    margin-left: 0;
+    height: 100%;
+    width: 800px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-video-start {
+    width: auto;  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-size: 50px;
+
+}
+
+  .option-list-start {
+    border-radius: 16px;
+    margin-bottom: 100px;
+    padding: 10px;
+  }
+  
+  .option-list-start ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .option-list-start h3 {
+    font-size: 1.6rem;
+    color: #38bdf8;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .container {
+    background:rgba;
+    backdrop-filter: blur(8px); 
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 20px 100px;
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0, 229, 255, 0.08);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 30px rgba(0, 229, 255, 0.15);
+  }
+  
+  
+  .button {
+    padding: 12px 28px;
+    background: linear-gradient(to right, #06b6d4, #3b82f6);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(59, 130, 246, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .button:hover {
+    transform: scale(1.06);
+    box-shadow: 0 6px 18px rgba(59, 130, 246, 0.6);
+  }
+  
+  .button.secondary:hover {
+    background: #475569;
+    color: #ffffff;
+    box-shadow: 0 3px 6px rgba(255, 255, 255, 0.2);
+  }
+  

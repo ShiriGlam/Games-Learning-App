@@ -1,0 +1,49 @@
+.ai-helper-box {
+	background: linear-gradient(145deg, #1f2937, #111827);
+	color: #e0f2fe;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 16px;
+	padding: 25px 29px;
+	margin-top: 20px;
+	box-shadow: 0 4px 20px rgba(0, 229, 255, 0.1), 0 0 10px rgba(0, 229, 255, 0.05) inset;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	backdrop-filter: blur(10px);
+	transition: all 0.3s ease-in-out;
+	animation: fadeInAI 0.6s ease-out;
+  }
+  
+  .ai-helper-box h4 {
+	font-size: 1.1rem;
+	margin-bottom: 12px;
+	color: #7dd3fc;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
+  }
+  
+  .ai-helper-box h4::before {
+	content: '🤖';
+	margin-right: 8px;
+	font-size: 1.2rem;
+  }
+  
+  .ai-message {
+	font-size: 1rem;
+	line-height: 1.6;
+	color: #e0f2fe;
+  }
+  
+  .ai-helper-box p {
+	margin: 0;
+  }
+  
+  @keyframes fadeInAI {
+	from {
+	  opacity: 0;
+	  transform: translateY(8px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }

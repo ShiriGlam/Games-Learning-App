@@ -1,0 +1,43 @@
+body {
+	margin: 0;
+	overflow: hidden;
+	font-family: Arial, sans-serif;
+	background-color: #87ceeb;
+  }
+  
+  #gameCanvas {
+	display: block;
+	margin: 0 auto;
+	background: url('assets/background.png') no-repeat center center;
+	background-size: cover;
+  }
+  
+  #question {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 24px;
+	color: #fff;
+	text-shadow: 1px 1px 3px black;
+	z-index: 10;
+  }
+  body {
+	font-family: Arial, sans-serif;
+	text-align: center;
+	background-color: #f0f8ff;
+  }
+  
+  canvas {
+	border: 2px solid #0a3cda;
+	margin: 10px auto;
+	display: block;
+  }
+  
+  #question-box button {
+	margin: 5px;
+	padding: 10px 15px;
+	font-size: 16px;
+	cursor: pointer;
+  }
+  

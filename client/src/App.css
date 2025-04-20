@@ -1,0 +1,72 @@
+/* בסיס כללי */
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, rgba, #475b7b);
+  min-height: 100vh;
+  color: #e2e8f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.App-logo {
+  height: 30vmin;
+  pointer-events: none;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.1));
+  transition: transform 0.3s ease-in-out;
+}
+
+.App-logo:hover {
+  transform: scale(1.05);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  color: #cbd5e1;
+  text-shadow: 0 0 10px rgba(0, 229, 255, 0.1);
+  animation: fadeInHeader 1s ease-in-out;
+}
+
+
+.App-link {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #0ea5e9;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes fadeInHeader {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

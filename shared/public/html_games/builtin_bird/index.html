@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flappy Word Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="./game-sdk.js"></script>
+<script src="game-sdk.js"></script>
+</head>
+<body>
+  <h1 id="question">Loading...</h1>
+  <canvas id="myCanvas" width="620" height="480" style="
+    background: url('http://s2js.com/img/etc/flappyback.png');
+    background-size: 100%;
+    height: 95%;
+  "></canvas>
+
+  <div id="question-box" style="display: none; position: absolute; top: 100px; left: 50%; transform: translateX(-50%); background: white; padding: 20px; border-radius: 10px;">
+    <p id="question-text"></p>
+    <div id="answers"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

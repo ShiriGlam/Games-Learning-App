@@ -1,0 +1,197 @@
+.gamer-page {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:#1f2937;
+  overflow: hidden;
+  color: #e0f2fe;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  z-index: 1;
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.background-video-gamer {
+  width: auto;
+  height: 120%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+  background-color: transparent;
+  filter: brightness(0.3);
+}
+
+.cta-button {
+  background: linear-gradient(to right, #2563eb, #3b82f6);
+  color: white;
+  padding: 12px 30px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 8px 16px rgba(59, 130, 246, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.6);
+}
+
+.delete-button {
+  color: #f87171;
+  font-weight: bold;
+}
+
+.game-table {
+  width: 90%;
+  max-width: 1000px;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 229, 255, 0.1);
+}
+
+.game-table thead {
+  background-color: rgba(14, 165, 233, 0.1);
+  color: #e0f2fe;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.game-table th, .game-table td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.game-table tbody tr {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.game-table tbody tr:hover {
+  background-color: rgba(30, 41, 59, 0.6);
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color:rgba;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background: linear-gradient(145deg, #1f2937, #0f172a);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  color: #e0f2fe;
+  animation: fadeIn 0.5s ease;
+}
+
+.modal-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #7dd3fc;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #f1f5f9;
+}
+
+.modal-content textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+.modal-content {
+  background: linear-gradient(145deg, #1f2937, #0f172a);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 20px;
+  width: 90vw;
+  max-width: 400px;  
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  color: #e0f2fe;
+  animation: fadeIn 0.5s ease;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-content button {
+  background: linear-gradient(to right, #22c55e, #16a34a);
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: #15803d;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.8rem;
+  color: #f87171;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #ef4444;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
